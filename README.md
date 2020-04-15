@@ -1,6 +1,6 @@
 ## What now?
 
-This is a fork of [@evanw](https://github.com/evanw)'s awesome [Finite State Machine Designer](http://madebyevan.com/fsm/).
+For now, this only contains a fork of [@evanw](https://github.com/evanw)'s awesome [Finite State Machine Designer](http://madebyevan.com/fsm/) under `/fsm`.
 
 All I did was add an option to export to JSON, and import from JSON.
 
