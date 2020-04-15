@@ -117,20 +117,21 @@
 
 <body>
 	<h1>Finite State Machine Designer</h1>
+	<h4>With save/load features! See info <a href="#intro">below</a></h4>
 	<canvas id="canvas" width="800" height="600">
 		<span class="error">Your browser does not support<br>the HTML5 &lt;canvas&gt; element</span>
 	</canvas>
 	<div>
 		<p class="center">Export as: <a href="javascript:saveAsPNG()">PNG</a> | <a href="javascript:saveAsSVG()">SVG</a>
-			| <a href="javascript:saveAsLaTeX()">LaTeX</a> | <a href="javascript:saveAsJSON()">JSON (Save to file)</a>
+			| <a href="javascript:saveAsLaTeX()">LaTeX</a> | <a href="javascript:saveAsJSON()">JSON</a>
 		</p>
-		<p class="center">Import from: <a href="javascript:loadFromJSON()">JSON (load from file)</a></p>
+		<p class="center">Import from: <a href="javascript:loadFromJSON()">JSON</a></p>
 		<h3 id="outputBoxHeader">Output Box</h3>
 		<textarea id="output"></textarea>
 		<hr>
 		<h3 id="inputBoxHeader">Input Box</h3>
 		<textarea id="input"></textarea>
-		<p>
+		<p id="intro">
 			This is a fork of <a href="https://github.com/evanw">evanw</a>'s awesome <a href="http://madebyevan.com/fsm/">Finite State Machine Designer.</a>
 			All I did was add an option to export to JSON, and import from JSON.
 			It works OK, but needs some additional things:
@@ -141,6 +142,19 @@
 				<li>Logically, it should allow you to load the JSON by uploading a file.</li>
 			</ol>
 		</p>
+		<p>
+			You can click "Export as" --> "JSON" to get a JSON-encoded version of your state machine.
+			Copy it and save it to a safe location. A file is probably a good safe location.
+		</p>
+		<p>
+			You can can click "Import from" --> "JSON" to import from a JSON string. Copy your string into the "Input Box", then click this button.
+			<b>DO NOT CLICK THE BUTTON TWICE,</b> there's a bug there.
+		</p>
+		<p>
+			Questions? Use the repo's issue tracker and I'll get notified: https://github.com/tomgs/tomgs.github.io/issues
+			Pull Requests? Sure! Bring 'em on: https://github.com/tomgs/tomgs.github.io/pulls
+		</p>
+		<hr>
 		<p>The big white box above is the FSM designer.&nbsp; Here's how to use it:</p>
 		<ul>
 			<li><b>Add a state:</b> double-click on the canvas</li>
